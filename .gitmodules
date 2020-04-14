@@ -1,0 +1,9 @@
+[submodule "mabel/mabel_sim/franka_sim"]
+	path = mabel/mabel_sim/franka_sim
+	url = https://github.com/vikashplus/franka_sim
+[submodule "mabel/mabel_sim/scene_sim"]
+	path = mabel/mabel_sim/scene_sim
+	url = https://github.com/vikashplus/scene_sim
+[submodule "mabel/mabel_sim/furniture_sim"]
+	path = mabel/mabel_sim/furniture_sim
+	url = https://github.com/vikashplus/furniture_sim
