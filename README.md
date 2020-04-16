@@ -6,7 +6,7 @@ MAnipulation BEnchmarks for Learning
 ## Getting Started
 `MABEL` uses git submodules to resolve dependencies. Please follow steps exactly as below to install correctly.
 
-0. Ensure you have access these two repositories - [Franka_sim](https://github.com/vikashplus/franka_sim), [Furniture](https://github.com/vikashplus/furniture_sim) and [Scene_sim(https://github.com/vikashplus/scene_sim)
+0. Ensure you have access these two repositories - [Franka_sim](https://github.com/vikashplus/franka_sim), [Furniture_sim](https://github.com/vikashplus/furniture_sim) and [Scene_sim](https://github.com/vikashplus/scene_sim)
 
 1. Clone this repo with pre-populated submodule dependencies
 ```
