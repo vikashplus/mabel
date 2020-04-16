@@ -13,7 +13,7 @@ def get_args():
     parser.add_argument("-e", "--env_name", 
                         type=str, 
                         help="environment name",
-                        default="SawyerDhandReach-v0")
+                        default="MableReachRandom-v0")
     parser.add_argument("-p", "--policy", 
                         type=str, 
                         help="path to policy",
