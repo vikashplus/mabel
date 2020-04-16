@@ -1,0 +1,66 @@
+<mujoco model="MAnipuation BEnchmark for Learning: Pouring-Task">
+
+    <include file="../base/mabel_base_scene.xml"/>
+
+    <worldbody>
+
+        <!-- empty_container -->
+        <body name="empty_container" pos=".3 .4 0.76">
+            <site name="empty_container" size='.01'/>
+           	<geom name="empty_base" type="box"  rgba='.4 .8 .6 1' size="0.0401 0.0401 0.005" pos="0 0 0.005" condim="4" friction="1 1 .001"/>
+            <geom name="empty_right" type="box" rgba='.4 .8 .6 1' size="0.005 0.03 0.05" pos="0.035 0 0.05" condim="4" friction="1 1 .001"/>
+            <geom name="empty_left" type="box" rgba='.4 .8 .6 1' size="0.005 0.03 0.05" pos="-.035 0 0.05" condim="4" friction="1 1 .001"/>
+            <geom name="empty_front" type="box" rgba='.4 .8 .6 1' size="0.04 0.005 0.05" pos="0 0.035 0.05" condim="4" friction="1 1 .001"/>
+            <geom name="empty_back" type="box" rgba='.4 .8 .6 1' size="0.04 0.005 0.05" pos="0 -.035 0.05" condim="4" friction="1 1 .001"/>
+        </body>
+
+        <!-- full_container -->
+        <body name="full_container" pos="-.075 .4 0.76">
+            <site name="full_container" size='.01'/>
+           	<geom name="container_base" type="box"  rgba='.4 .4 .6 1' size="0.0401 0.0401 0.005" pos="0 0 0.005" condim="4" friction="1 1 .001"/>
+            <geom name="container_right" type="box" rgba='.4 .4 .6 1' size="0.005 0.03 0.05" pos="0.035 0 0.05" condim="4" friction="1 1 .001"/>
+            <geom name="container_left" type="box" rgba='.4 .4 .6 1' size="0.005 0.03 0.05" pos="-.035 0 0.05" condim="4" friction="1 1 .001"/>
+            <geom name="container_front" type="box" rgba='.4 .4 .6 1' size="0.04 0.005 0.05" pos="0 0.035 0.05" condim="4" friction="1 1 .001"/>
+            <geom name="container_back" type="box" rgba='.4 .4 .6 1' size="0.04 0.005 0.05" pos="0 -.035 0.05" condim="4" friction="1 1 .001"/>
+
+            <joint name="B1Tx" pos="0 0 0" axis="1 0 0" limited='true' type="slide" range="-1.5 1.5"/>
+            <joint name="B1Ty" pos="0 0 0" axis="0 1 0" limited='true' type="slide" range="-1.5 1.5"/>
+            <joint name="B1Tz" pos="0 0 0" axis="0 0 1" limited='true' type="slide" range="-1.5 1.5"/>
+            <joint name="B1Rx" pos="0 0 0" axis="1 0 0" limited='true' type='hinge' range="-10.57 10.57"/>
+            <joint name="B1Ry" pos="0 0 0" axis="0 1 0" limited='true' type='hinge' range="-10.57 10.57"/>
+            <joint name="B1Rz" pos="0 0 0" axis="0 0 1" limited='true' type='hinge' range="-10.57 10.57"/>
+        </body>
+
+        <body name="media0" pos="-.0751 .41 0.86">
+            <geom type="sphere" condim="1" size="0.01" rgba=".7 .4 .2 1"/>
+            <freejoint/>
+        </body>
+
+        <body name="media1" pos="-.075 .4 0.88">
+            <geom type="sphere" condim="1" size="0.01" rgba=".7 .4 .2 1"/>
+            <freejoint/>
+        </body>
+
+        <body name="media2" pos="-.075 .4 0.90">
+            <geom type="sphere" condim="1" size="0.01" rgba=".7 .4 .2 1"/>
+            <freejoint/>
+        </body>
+
+        <body name="media3" pos="-.075 .4 0.92">
+            <geom type="sphere" condim="1" size="0.01" rgba=".7 .4 .2 1"/>
+            <freejoint/>
+        </body>
+
+        <body name="media4" pos="-.075 .4 0.94">
+            <geom type="sphere" condim="1" size="0.01" rgba=".7 .4 .2 1"/>
+            <freejoint/>
+        </body>
+
+        <body name="media5" pos="-.075 .4 0.96">
+            <geom type="sphere" condim="1" size="0.01" rgba=".7 .4 .2 1"/>
+            <freejoint/>
+        </body>
+
+    </worldbody>
+
+</mujoco>

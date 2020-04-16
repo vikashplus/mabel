@@ -1,0 +1,9 @@
+<mujoco model="MAnipuation BEnchmark for Learning: Reach-Task">
+
+    <include file="../base/mabel_base_scene.xml"/>
+
+    <worldbody>
+        <site name='target' type='sphere' size='.1' pos='0 0.475 1.0' group='1' rgba='.1 .8 .2 .4'/>
+    </worldbody>
+
+</mujoco>

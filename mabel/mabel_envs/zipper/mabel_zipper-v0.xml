@@ -1,0 +1,54 @@
+<mujoco model="MAnipuation BEnchmark for Learning: Zipper-Task">
+
+    <include file="../base/mabel_base_scene.xml"/>
+
+    <asset>
+        <texture name="texcloth" type="2d" height="10" width="2" file="../../mabel_envs/zipper/jeans.png"/>
+        <material name="MatCloth" reflectance="0.05" texture="texcloth" texrepeat="10 10" texuniform="true"/>
+    </asset>
+
+    <default>
+        <default class="zipper" >
+            <geom rgba=".75 .50 .22 1"/>
+        </default>
+    </default>
+
+    <tendon>
+        <spatial width="0.007" rgba=".75 .50 .22 1">
+        <site site="top"/>
+        <site site="buckle"/>
+        </spatial>
+    </tendon>
+
+
+    <worldbody>
+        <!-- Zipper -->
+        <geom type="box" size=".5 .3 .005" pos="0 .5 .756" group="1" material="MatCloth" rgba=".2 .2 .2 1"/>
+
+        <body name="zipper" pos="0 0.5 0.78">
+            <site name="top" size='.01' pos=".2 0 0"/>
+            <site name="bottom" size='.01' pos="-.2 0 0"/>
+            <joint type="hinge" name="base" axis="0 0 1" pos=".2 0 0" range="-1.57 1.57" limited="true" frictionloss=".1"/>
+            <geom type="box" size=".25 .025 .005" pos="0 0.035 0" mass=".010" group="1" material="MatCloth"/>
+            <geom type="box" size=".25 .025 .005" pos="0 -.035 0" mass=".010" group="1" material="MatCloth"/>
+            <geom type="capsule" size=".007 .21" pos="0 0.01 0" mass=".010" group="1" euler="0 1.57 0" class="zipper"/>
+            <geom type="capsule" size=".007 .21" pos="0 -.01 0" mass=".010" group="1" euler="0 1.57 0" class="zipper"/>
+            <geom type="box" size=".005 .025 .01" pos=".2 0 0" mass=".002" class="zipper"/>
+            <geom type="box" size=".005 .01 .01" pos="-.2 -.015 0" mass=".002" class="zipper"/>
+            <geom type="box" size=".005 .01 .01" pos="-.2 .015 0" mass=".002" class="zipper"/>
+
+            <body name="buckle" pos=".15 0 0.005">
+                <joint type="slide" name="slider1" axis="-1 0 0" range="0 0.35" limited="true" frictionloss="1"/>
+                <site name="buckle" size='.01' pos="0 0 -.005"/>
+                <geom type="box" size=".04 .025 .01" mass=".010" class="zipper"/>
+
+                <body name="handle" pos="0 0 0.01">
+                    <site name="handle" size='.01'/>
+                    <geom size='.012' type="sphere" rgba=".5 .5 .5 1" contype="0" conaffinity="0"/>
+                    <joint type="hinge" name="hingne1" pos="0 0 0" axis="0 1 0" range="0.4 1.57" limited="true" frictionloss=".1"/>
+                    <geom type="box" size=".065 .020 0.005" pos="-.065 0 0" rgba=".44 .44 .44 1" mass=".010" group="1" />
+                </body>
+            </body>
+        </body>
+    </worldbody>
+</mujoco>

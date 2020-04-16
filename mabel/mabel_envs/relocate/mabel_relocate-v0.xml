@@ -1,0 +1,43 @@
+<mujoco model="MAnipuation BEnchmark for Learning: Relocate-Task">
+
+    <include file="../base/mabel_base_scene.xml"/>
+
+    <worldbody>
+
+        <site name="target" type="box" size=".1 .04 .002" pos="0 .4 .76" rgba="0 1 0 1"/>
+
+        <!-- Blocks -->
+        <body name="Block1" pos="-.075 .6 0.86">
+            <site name="Block1" size='.01'/>
+            <geom type="box" size=".03 .03 .09" rgba="0.8 0.7 0.9 1.0" mass='.1'/>
+            <joint name="B1Tx" pos="0 0 0" axis="1 0 0" limited='true' type="slide" range="-1.5 1.5"/>
+            <joint name="B1Ty" pos="0 0 0" axis="0 1 0" limited='true' type="slide" range="-1.5 1.5"/>
+            <joint name="B1Tz" pos="0 0 0" axis="0 0 1" limited='true' type="slide" range="-1.5 1.5"/>
+            <joint name="B1Rx" pos="0 0 0" axis="1 0 0" limited='true' type='hinge' range="-10.57 10.57"/>
+            <joint name="B1Ry" pos="0 0 0" axis="0 1 0" limited='true' type='hinge' range="-10.57 10.57"/>
+            <joint name="B1Rz" pos="0 0 0" axis="0 0 1" limited='true' type='hinge' range="-10.57 10.57"/>
+        </body>
+        <body name="Block2" pos="0.075 .6 0.86">
+            <site name="Block2" size='.01'/>
+            <geom type="box" size=".03 .03 .09" rgba="0.9 0.9 0.7 1.0" mass='.1'/>
+            <joint name="B2Tx" pos="0 0 0" axis="1 0 0" limited='true' type="slide" range="-1.5 1.5"/>
+            <joint name="B2Ty" pos="0 0 0" axis="0 1 0" limited='true' type="slide" range="-1.5 1.5"/>
+            <joint name="B2Tz" pos="0 0 0" axis="0 0 1" limited='true' type="slide" range="-1.5 1.5"/>
+            <joint name="B2Rx" pos="0 0 0" axis="1 0 0" limited='true' type='hinge' range="-10.57 10.57"/>
+            <joint name="B2Ry" pos="0 0 0" axis="0 1 0" limited='true' type='hinge' range="-10.57 10.57"/>
+            <joint name="B2Rz" pos="0 0 0" axis="0 0 1" limited='true' type='hinge' range="-10.57 10.57"/>
+        </body>
+        <body name="Block3" pos="-.255 .6 0.86">
+            <site name="Block3" size='.01'/>
+            <geom type="box" size=".03 .03 .09" rgba="0.5 0.9 0.9 1.0" mass='.1'/>
+            <joint name="B3Tx" pos="0 0 0" axis="1 0 0" limited='true' type="slide" range="-1.5 1.5"/>
+            <joint name="B3Ty" pos="0 0 0" axis="0 1 0" limited='true' type="slide" range="-1.5 1.5"/>
+            <joint name="B3Tz" pos="0 0 0" axis="0 0 1" limited='true' type="slide" range="-1.5 1.5"/>
+            <joint name="B3Rx" pos="0 0 0" axis="1 0 0" limited='true' type='hinge' range="-10.57 10.57"/>
+            <joint name="B3Ry" pos="0 0 0" axis="0 1 0" limited='true' type='hinge' range="-10.57 10.57"/>
+            <joint name="B3Rz" pos="0 0 0" axis="0 0 1" limited='true' type='hinge' range="-10.57 10.57"/>
+        </body>
+
+    </worldbody>
+
+</mujoco>
