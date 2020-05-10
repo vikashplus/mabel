@@ -28,5 +28,5 @@ MJPL python mabel/mabel_agents/mjrl/examine_policy.py -i mabel -e MableReachRand
 ```
 5. To visualize an trained `mjrl` agent
 ```
-python MPL_agents/mjrl/examine_policy.py -e SallyReachRandom-v0 -p <path to policy>
+MJPL python mabel/mabel_agents/mjrl/examine_policy.py -i mabel -e MableReachRandom-v0 -p <path to policy>
 ```
