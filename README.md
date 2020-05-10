@@ -19,7 +19,7 @@ $ git submodule update --remote
 ```
 3. Add repo to pythonpath by updating `~/.bashrc` or `~/.bash_profile`
 ```
-export PYTHONPATH="<path/to/MPL>:$PYTHONPATH"
+export PYTHONPATH="<path/to/mabel>:$PYTHONPATH"
 ```
 4. Follow install instructions from [mjrl](https://github.com/aravindr93/mjrl) to get model free agents for `MPL'
 5. To visualize an env using a random policy
