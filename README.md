@@ -5,7 +5,7 @@ MAnipulation BEnchmarks for Learning
 
 Pointing           | Pouring       | Relocation             | Zipping
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![Alt text](/mabel_envs/reach/reach.png?raw=false "Fetch Reaching") |  ![Alt text](mabel_envs/pouring/pouring.png?raw=false "Liquid pouring") | ![Alt text](mabel_envs/relocate/relocate.png?raw=false "Object relocation") | ![Alt text](mabel_envs/zipper/zipper.png?raw=false "Fetch zipper")
+![Alt text](mabel/mabel_envs/reach/reach.png?raw=false "Fetch Reaching") |  ![Alt text](mabel/mabel_envs/pouring/pouring.png?raw=false "Liquid pouring") | ![Alt text](mabel/mabel_envs/relocate/relocate.png?raw=false "Object relocation") | ![Alt text](mabel/mabel_envs/zipper/zipper.png?raw=false "Fetch zipper")
 
 
 ## Getting Started
