@@ -11,7 +11,7 @@ Pointing           | Pouring       | Relocation             | Zipping
 ## Getting Started
 `MABEL` uses git submodules to resolve dependencies. Please follow steps exactly as below to install correctly.
 
-0. Ensure you have access these two repositories - [Franka_sim](https://github.com/vikashplus/franka_sim), [Furniture_sim](https://github.com/vikashplus/furniture_sim) and [Scene_sim](https://github.com/vikashplus/scene_sim)
+0. Ensure you have access these repositories - [Franka_sim](https://github.com/vikashplus/franka_sim), [Furniture_sim](https://github.com/vikashplus/furniture_sim) and [Scene_sim](https://github.com/vikashplus/scene_sim)
 
 1. Clone this repo with pre-populated submodule dependencies
 ```
@@ -26,12 +26,12 @@ $ git submodule update --remote
 ```
 export PYTHONPATH="<path/to/mabel>:$PYTHONPATH"
 ```
-4. Follow install instructions from [mjrl](https://github.com/aravindr93/mjrl) to get model free agents for `MPL'
+4. Follow install instructions from [mjrl](https://github.com/aravindr93/mjrl) to get model free agents for `MABEL`
 5. To visualize an env using a random policy
 ```
 MJPL python mabel/mabel_agents/mjrl/examine_policy.py -i mabel -e MableReachRandom-v0
 ```
-5. To visualize an trained `mjrl` agent
+5. To visualize a trained `mjrl` agent's policy
 ```
 MJPL python mabel/mabel_agents/mjrl/examine_policy.py -i mabel -e MableReachRandom-v0 -p <path to policy>
 ```
