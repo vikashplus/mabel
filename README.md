@@ -1,7 +1,12 @@
 # MABEL
 MAnipulation BEnchmarks for Learning
 
-`MABEL` is a collection of environments/tasks for benchmarking manipulation, simulated with the [Mujoco](http://www.mujoco.org/) physics engine and wrapped in the [OpenAI `gym`](https://gym.openai.com/) API.
+`MABEL` is a collection of environments/tasks for benchmarking manipulation, simulated with the [Mujoco](http://www.mujoco.org/) physics engine and wrapped in the [OpenAI `gym`](https://gym.openai.com/) API. 'MABEL' constains following tasks
+
+Pointing           | Pouring       | Relocation             | Zipping
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![Alt text](/mabel_envs/reach/reach.png?raw=false "Fetch Reaching") |  ![Alt text](mabel_envs/pouring/pouring.png?raw=false "Liquid pouring") | ![Alt text](mabel_envs/relocate/relocate.png?raw=false "Object relocation") | ![Alt text](mabel_envs/zipper/zipper.png?raw=false "Fetch zipper")
+
 
 ## Getting Started
 `MABEL` uses git submodules to resolve dependencies. Please follow steps exactly as below to install correctly.
